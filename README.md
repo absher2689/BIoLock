@@ -1,4 +1,5 @@
 **BioLock: Behavioral Biometric Browser Login Shield**
+
 BioLock is a high-performance, local-first Google Chrome Extension (Manifest V3) that shifts web security from static, "point-of-entry" passwords to continuous behavioral biometric authentication. By silently monitoring subconscious interaction habits, BioLock establishes an invisible identity shield that mitigates session hijacking, credential sharing, and unauthorized physical workstation access in real time—all without interrupting user workflows.
 Unlike traditional security systems that rely on resource-heavy cloud-based AI, BioLock processes behavioral patterns completely on-device, offering enterprise-grade zero-trust security with sub-millisecond inference latency and total data privacy.
 
