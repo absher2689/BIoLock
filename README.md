@@ -4,6 +4,7 @@ BioLock is a high-performance, local-first Google Chrome Extension (Manifest V3)
 Unlike traditional security systems that rely on resource-heavy cloud-based AI, BioLock processes behavioral patterns completely on-device, offering enterprise-grade zero-trust security with sub-millisecond inference latency and total data privacy.
 
 **🚀 Key Features**
+
 Continuous Behavioral Tracking: Captures fine-grained interaction metrics across all active tabs, logging Dwell Time (key-press durations), Flight Time (inter-key latency rhythms), and Mouse Velocity with millisecond precision.
 Ultra-Lightweight Statistical Engine: Swaps CPU-heavy neural networks for an incremental implementation of Welford’s Online Algorithm, allowing the system to update behavioral means and variances on-the-fly with a footprint under 100MB of RAM.
 Progressive Multi-Threshold Security: Uses an adaptive Z-Score deviation policy to trigger subtle user alerts for minor rhythm shifts or issue an immediate, un-bypassable lock overlay for high-probability session threats.
@@ -12,6 +13,7 @@ Leak-Proof Process Persistence: Architected around Chrome's Offscreen Document A
 Hardened Action Protection: Secures administrative checkpoints (such as extension toggles or data purges) behind strict password prompts to prevent bypass attempts by localized intruders.
 
 **📊 How It Works**
+
 1. Data Capture & ProfilingWhen typing or navigating, content scripts evaluate subconscious neuromuscular patterns. Non-alphanumeric keyboard keys are systematically filtered to preserve data privacy while focusing purely on user rhythm:
 Dwell Time: The absolute duration a key remains depressed.  
 Flight Time: The speed of transition between consecutive key releases and strikes.
@@ -25,15 +27,18 @@ Every data payload generated during a session is evaluated against a dynamic loc
 Where x represents the live feature layer average , \mu represents the historical mean template , and \sigma represents the calculated standard deviation baseline. 
 
 **🛠️ Tech Stack**
+
 Core Architecture: Vanilla JavaScript (ES6+), HTML5, CSS3   
 Browser Integration: Google Chrome Extension Framework (Manifest Version 3)   
 Primary APIs: chrome.offscreen, chrome.storage.local, Web Crypto API (AES-GCM encryption)   
 Database Storage: IndexedDB (Client-Side)   
 
 **🚀 Installation & Local Setup**
+
 Clone the Repository:
-   Bash git clone https://github.com/yourusername/BioLock.git
-        cd BioLock
+
+               git clone https://github.com/yourusername/BioLock.git
+               cd BioLock
 2. Open Chrome Extensions Management:
 Navigate to chrome://extensions/ in your Google Chrome browser.
 Enable Developer mode using the toggle switch in the top right-hand corner.
